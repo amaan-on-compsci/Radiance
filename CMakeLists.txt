@@ -23,7 +23,7 @@ add_subdirectory(vendor/glfw)
 # Collect source/header files
 file(GLOB_RECURSE SRC_FILES 
     "${PROJECT_SOURCE_DIR}/src/*.cpp"
-    "${PROJECT_SOURCE_DIR}/include/Radiance/*.h"
+    "${PROJECT_SOURCE_DIR}/include/*.h"
 )
 
 # Create the Radiance executable
