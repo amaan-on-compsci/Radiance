@@ -16,7 +16,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
 # vendor dependencies (optional - add or remove as you go)
-# add_subdirectory(vendor/glfw)
+add_subdirectory(vendor/glfw)
 # add_subdirectory(vendor/glad)
 # add_subdirectory(vendor/imgui)
 
@@ -43,3 +43,5 @@ target_link_libraries(Radiance PRIVATE OpenGL::GL)
 if (UNIX)
     target_link_libraries(Radiance PRIVATE Threads::Threads)
 endif()
+
+target_link_libraries(Radiance PRIVATE glfw)
