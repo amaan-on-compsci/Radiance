@@ -1,0 +1,44 @@
+# Ignore build directories
+/build/
+/bin/
+/lib/
+
+# Ignore CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore generated files
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.log
+
+# Ignore backup and temporary files
+*~
+*.swp
+*.bak
+*.tmp
+*.old
+
+# Ignore vendor dependencies (if you want to keep them out of version control)
+vendor/glfw/
+vendor/glad/
+vendor/imgui/
+
+# Ignore IDE specific files
+.idea/
+*.iml
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
